@@ -102,7 +102,7 @@ if(isset($_POST['confirmall']))
                ";
 
   $email_body = wordwrap($email_body,1000);
-
+  
   mail($to, $email_subject,$email_body);
   mail($cc, $email_subject,$email_body);
   header ("Location: ../thanks.html");
